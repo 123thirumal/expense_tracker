@@ -15,7 +15,7 @@ class ExpensePage extends StatefulWidget {
 }
 
 class _ExpensePageState extends State<ExpensePage> {
-  List<Expenses> expensedata=[Expenses(name: 'flutter', amount: 22.4, date: DateTime.now(), category: Category.work)];
+  List<Expenses> expensedata=[];
 
   void _addingNewExpense(
       TextEditingController givenName,
@@ -115,7 +115,7 @@ class _ExpensePageState extends State<ExpensePage> {
                           color: const Color(0xFF0C181A)
 
                       ),
-                      child: Expanded(child: ChartWidget(expensedata: expensedata)),
+                      child: ChartWidget(expensedata: expensedata),
                     ),
                   ),
                 ),
@@ -167,7 +167,7 @@ class _ExpensePageState extends State<ExpensePage> {
                   color: const Color(0xFF0C181A)
 
                 ),
-                child: Expanded(child: ChartWidget(expensedata: expensedata)),
+                child: ChartWidget(expensedata: expensedata),
               ),
             ),
             Expanded(
